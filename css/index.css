@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("https://i.pinimg.com/736x/2d/dd/f0/2dddf0ed5e8652150734948eaf6e6bf4.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo al hacer scroll */
+  }
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    background-color:#addfd3cc; /* Azul oscuro */
+    padding: 1rem 2rem;
+  }
+  
+  .logo img {
+    height: 100px; /* Ajusta el tamaño del logo según lo necesites */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1.5rem;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Centra el texto y la imagen dentro de la sección */
+.seccion-sobre-mi {
+    text-align: center;
+    margin-top: 40px; /* Espacio desde el header */
+  }
+  
+  .seccion-sobre-mi h1 {
+    font-size: 50px; /* Tamaño del texto de "Sobre Mí" */
+    color: #003366; /* Color del texto, ajustable */
+    margin-bottom: 20px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal; /* Espacio entre el texto y la imagen */
+  }
+  
+  /* Asegura que la imagen esté centrada en el contenedor */
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Espacio entre el header y la imagen, ajustable */
+  }
+  
+  .imagen img {
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: 250px; /* Asegura que sea un círculo perfecto */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 8px solid #003366; /* Ajusta el grosor y color del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: agrega sombra para efecto */
+  }
+  
+  .informacion h3 {
+    font-size: 20px; /* Tamaño del texto de "Sobre Mí" */
+    color: black; /* Color del texto, ajustable */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;/* Espacio entre el texto y la imagen */
+  }
+  
+  .sistemas {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */            
+  }
+  
+  .sistemas img {
+    width: 300px;            /* Ajusta el tamaño de la imagen */
+    height: 300px;           /* Ajusta el tamaño de la imagen */
+    border-radius: 10%;      /* Redondea los bordes de la imagen */
+    object-fit: cover;       /* Hace que la imagen cubra el área de 300x300 sin deformarse */
+  }
+
+  .habilidades h3 {
+    font-size: 20px; /* Tamaño del texto de "Sobre Mí" */
+    color: black; /* Color del texto, ajustable */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;/* Espacio entre el texto y la imagen */
+  }
