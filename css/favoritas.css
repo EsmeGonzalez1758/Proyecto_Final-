@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://i.pinimg.com/736x/c4/b1/08/c4b10815fb79d72e05a356803f2eb602.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo al hacer scroll */
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    background-color:#addfd3cc; /* Azul oscuro */
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 100px; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}

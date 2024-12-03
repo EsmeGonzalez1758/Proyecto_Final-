@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://i.pinimg.com/736x/8e/67/ae/8e67ae22c0166b9c5e3754d94e0b2fc5.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo al hacer scroll */
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    background-color:#addfd3cc; /* Azul oscuro */
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 100px; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra el contenedor de imagen-texto horizontalmente */
+    gap: 40px; /* Espacio entre los elementos (entre imagen y texto) */
+    padding: 20px;
+}
+
+/* Contenedor de cada par (imagen y texto) */
+.item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 30px; /* Espacio entre la imagen y el texto */
+    justify-content: center; /* Centra horizontalmente cada par de imagen y texto */
+    width: 80%; /* Hace que el contenedor ocupe el 80% del ancho disponible */
+    max-width: 1000px; /* Limita el ancho máximo */
+}
+
+/* Estilo para las imágenes */
+.item img {
+    width: 250px; /* Aumenta el tamaño de las imágenes */
+    height: 250px; /* Mantiene las imágenes cuadradas */
+    object-fit: cover; /* Asegura que las imágenes se recorten bien */
+    border-radius: 10px; /* Redondea las esquinas de las imágenes */
+    transition: transform 0.3s ease; /* Añade un efecto de transición al hacer hover */
+}
+
+/* Efecto al pasar el ratón sobre las imágenes */
+.item img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Estilo para el texto */
+.text {
+    max-width: 600px; /* Limita el ancho del contenedor de texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Título del texto */
+.text h3 {
+    margin: 0;
+    font-size: 24px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+}
+
+/* Párrafo */
+.text p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
