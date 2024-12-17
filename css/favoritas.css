@@ -1,49 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-image: url("https://i.pinimg.com/736x/c4/b1/08/c4b10815fb79d72e05a356803f2eb602.jpg"); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo al hacer scroll */
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/736x/8e/67/ae/8e67ae22c0166b9c5e3754d94e0b2fc5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
 }
+
 header {
     display: flex;
-    justify-content: space-between; /* Distribuye el logo a la izquierda y el menú a la derecha */
+    justify-content: space-between;
     align-items: center;
-    background-color:#addfd3cc; /* Azul oscuro */
+    background-color: #addfd3cc;
     padding: 1rem 2rem;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-    height: 100px; /* Ajusta el tamaño del logo según lo necesites */
+header .logo img {
+    height: 80px;
 }
 
-nav ul {
-    list-style-type: none;
+header nav ul {
+    list-style: none;
     display: flex;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    margin: 0 1.5rem;
-}
-
-nav ul li a {
-    color: black;
+header nav ul li a {
     text-decoration: none;
-    font-size: 20px;
-    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 18px;
+    font-family: 'Faculty Glyphic', sans-serif;
     font-weight: bold;
-    font-style: normal;
+    color: black;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
+    color: #007BFF;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    font-family: 'Anton', sans-serif;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(250, 177, 222);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-section h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #444;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.favorite-item {
+    text-align: center;
+    background: rgb(228, 124, 176);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorite-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.favorite-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #444;
+    font-family: 'Faculty Glyphic', sans-serif;
+}
+
+.favorite-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
 }
